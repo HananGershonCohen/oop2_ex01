@@ -1,6 +1,6 @@
 #include "SqrMatrix.h"
 
-SqrMatrix::SqrMatrix(int size) : m_size(size) , m_matrix(size,vector<MyType>(size,0)) //Initialize the matrix to the value 0
+SqrMatrix::SqrMatrix(int size) : m_size(size) , m_matrix(size,vector<MyType>(size,5)) //Initialize the matrix to the value 0
 {}
 
 ostream& operator<<(ostream& os, const SqrMatrix& matrix)
