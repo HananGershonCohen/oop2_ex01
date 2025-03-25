@@ -5,7 +5,9 @@
 using MyType = int;
 using std::vector;
 using std::ostream;
+using std::istream;
 using std::cout;
+using std::cin;
 using std::endl;
 
 class SqrMatrix
@@ -13,6 +15,7 @@ class SqrMatrix
 public:
 	SqrMatrix(int);
 	friend ostream& operator<< (ostream&, const SqrMatrix&);
+	friend istream& operator>> (istream&, SqrMatrix&);
 
 private:
 	int m_size;

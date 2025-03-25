@@ -1,8 +1,19 @@
 #include <iostream>
 #include "SqrMatrix.h"
 #include "Id.h"
+
+using std::cout;
+using std::cin;
+using std::endl;
+
 int main()
 {
-	SqrMatrix matrix(3);
-	std::cout << matrix;
+	int size;
+	cout << " enter size of MATRIX " << endl;
+	cin >> size;
+	SqrMatrix matrix(size);
+	cout << " enter " << size* size <<" value for MATRIX :size " << size << " X " << size << endl;
+	cin >> matrix;
+	cout << "this MATRIX " << endl;
+	cout << matrix;
 }
