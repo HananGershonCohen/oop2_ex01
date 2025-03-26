@@ -13,7 +13,7 @@ using std::endl;
 class SqrMatrix
 {
 public:
-	SqrMatrix(int);
+	SqrMatrix(int size=0);
 	friend ostream& operator<< (ostream&, const SqrMatrix&);
 	friend istream& operator>> (istream&, SqrMatrix&);
 
