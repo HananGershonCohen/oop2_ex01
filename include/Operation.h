@@ -7,7 +7,8 @@ class Operation
 public:
 	Operation(std::string);
 	virtual ~Operation() = default;
-	virtual SqrMatrix calc(SqrMatrix) = 0;
+	virtual SqrMatrix calc(SqrMatrix) { return SqrMatrix(); };
+	virtual SqrMatrix calc(SqrMatrix,int) { return SqrMatrix(); };
 	virtual void printName() const {}; // print name tha class (virtual).
 
 protected:

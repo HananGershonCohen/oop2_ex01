@@ -21,7 +21,7 @@ void SqrMatrix::scalar(int num)
 	{
 		for (int j = 0; j < m_size; j++)
 		{
-			m_matrix[i][j] *= 2;
+			m_matrix[i][j] *= num;
 		}
 	}
 }
