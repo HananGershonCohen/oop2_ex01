@@ -14,9 +14,10 @@ class SqrMatrix
 {
 public:
 	SqrMatrix(int size=0);
+	void transpose();
+	void scale(int);
 	friend ostream& operator<< (ostream&, const SqrMatrix&);
 	friend istream& operator>> (istream&, SqrMatrix&);
-
 private:
 	int m_size;
 	vector < vector <MyType>> m_matrix;

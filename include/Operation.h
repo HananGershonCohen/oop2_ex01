@@ -8,7 +8,7 @@ public:
 	Operation(std::string);
 	virtual ~Operation() = default;
 	virtual SqrMatrix calc(SqrMatrix) = 0;
-	virtual void print() const = 0; // print name tha class (virtual).
+	virtual void printName() const {}; // print name tha class (virtual).
 
 protected:
 	std::string m_name;

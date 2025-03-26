@@ -6,6 +6,7 @@
 #include <vector>
 #include <memory>
 #include "Eval.h"
+#include "Transpose.h"
 
 using std::cout;
 using std::cin;
@@ -15,11 +16,12 @@ int main()
 {
 	std::vector <std::shared_ptr<Operation>> operVec;
 	operVec.push_back(std::make_shared<Id>());
-
+	operVec.push_back(std::make_shared<Transpose>());
+	
 	for (int i = 0; i < operVec.size(); i++)
 	{
 		cout << i << ". ";
-		operVec.at(i)->print();
+		operVec.at(i)->printName();
 		cout << endl;
 	}
 
@@ -28,6 +30,6 @@ int main()
 	cout << str << endl;
 	if (str == "eval 0 2")
 	{
-		Eval eval(operVec.at(0),3);
+		Eval eval(operVec.at(1),3);
 	}
 }

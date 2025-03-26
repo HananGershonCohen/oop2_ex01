@@ -10,7 +10,7 @@ SqrMatrix Id::calc(const SqrMatrix matrix)
 	return matrix;
 }
 
-void Id::print() const
+void Id::printName() const
 {
-	cout << "id ";
+	cout << m_name;
 }
