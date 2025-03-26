@@ -1,3 +1,3 @@
-//#include "Transpose.h"
-//
-//Transpose::Transpose(std::string& name) : Operation(name) {}
+#include "Transpose.h"
+
+Transpose::Transpose() : Operation("Transpose") {}

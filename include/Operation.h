@@ -5,8 +5,11 @@
 class Operation
 {
 public:
-	Operation() = default;
-	~Operation() = default;
+	Operation(std::string);
+	virtual ~Operation() = default;
 	virtual SqrMatrix calc(SqrMatrix) = 0;
 	virtual void print() const = 0; // print name tha class (virtual).
+
+protected:
+	std::string m_name;
 };

@@ -4,8 +4,8 @@
 class Id :public Operation
 {
 public:
-	Id() = default;
-	~Id() = default;
+	Id();
+	virtual ~Id() = default;
 	virtual SqrMatrix calc(const SqrMatrix) override;
 	virtual void print() const ;
 };
