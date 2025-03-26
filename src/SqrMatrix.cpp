@@ -15,7 +15,7 @@ void SqrMatrix::transpose()
 
 }
 
-void SqrMatrix::scale(int num)
+void SqrMatrix::scalar(int num)
 {
 	for (int i = 0; i < m_size; i++)
 	{
