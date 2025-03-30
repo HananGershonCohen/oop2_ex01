@@ -7,5 +7,4 @@ public:
 	Transpose();
 	virtual ~Transpose() = default;
 	virtual SqrMatrix calc(SqrMatrix) override;
-	virtual void printName() const override; // print name tha class (virtual).
 };

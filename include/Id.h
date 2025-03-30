@@ -7,5 +7,4 @@ public:
 	Id();
 	virtual ~Id() = default;
 	virtual SqrMatrix calc(const SqrMatrix) override;
-	virtual void printName() const ;
 };

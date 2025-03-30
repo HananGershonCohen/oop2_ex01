@@ -4,8 +4,10 @@
 class Scal :public Operation
 {
 public:
-	Scal();
+	Scal(int);
 	virtual ~Scal() = default;
-	virtual SqrMatrix calc(SqrMatrix,int) override;
-	virtual void printName() const;
+	virtual SqrMatrix calc(SqrMatrix) override;
+
+private: 
+	int m_scalar;
 };

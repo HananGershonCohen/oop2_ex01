@@ -1,15 +1,9 @@
 #include "Scalar.h"
 
-Scal::Scal() :Operation("Scal") {}
+Scal::Scal(int scal) :Operation(("scal ") + std::to_string(scal)), m_scalar(scal) {}
 
-
-SqrMatrix Scal::calc(SqrMatrix matrix, int num)
+SqrMatrix Scal::calc(SqrMatrix matrix)
 {
-	matrix.scalar(num);
+	matrix.scalar(m_scalar);
 	return	matrix;
-}
-
-void Scal::printName() const
-{
-	cout << m_name;
 }

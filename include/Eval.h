@@ -9,5 +9,5 @@ class Eval
 {
 public:
 	Eval() = default;
-	void evaluate(std::shared_ptr<Operation>, int);
+	void calculate(std::shared_ptr<Operation>, int);
 };
